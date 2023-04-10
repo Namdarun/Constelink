@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "NotoSans";
+    src: url("../../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+
+/*컴포넌트 전체 */
+
+.DonationCard {
+    width: 91%;
+    height: 290px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+    /* z-index: 1; */
+}
+
+.DonationCard:hover {
+    transform: translateY(-5px);
+}
+
+.bookmark {
+    padding: 14px;
+    font-size: 17px;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* 1. 컨텐츠 박스 */
+
+.dona_box {
+    padding: 14px;
+    /* padding-top:75%; */
+    word-break: keep-all;
+}
+
+
+/* 병명 */
+
+.dona_type {
+    font-size: 3px !important;
+    width: 60px;
+    background-color: #827D7D;
+    border-radius: 10px;
+    text-align: center;
+    /* opacity: 0.9; */
+}
+
+
+/* 프로그래스 바, 달성률, 모금률 */
+
+.progress_box {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+.dona_curmoney {}
+
+.dona_curpercen {}
+
+
+/* 제목, 병원, 마감일 */
+
+.dona_title {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.dona_hospital {
+    font-size: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.dona_deadline {
+    font-size: 12px;
+}
+
+.money_percent {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px
+}
+
+progress {
+    height: 4px;
+    opacity: 0.8;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(29, 28, 28);
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #ececec;
+    border-radius: 10px;
+    animation: progress-bar 1s ease-out forwards;
+}
+
+@keyframes progress-bar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

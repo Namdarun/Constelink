@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "noto-sans";
+  src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+@font-face {
+  font-family: "Crisis";
+  src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+.mainWrapper{
+  width: 100%;
+  height: max-content;
+  padding-bottom: 5rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registerTitle{
+  font-family: "Hahmlet";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.registerWrapper{
+  height: max-content;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.imgInput{
+  width: 11rem;
+  height: 11rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.withImgCircle{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 0.2rem solid #A19FD5;
+}
+
+.benImg{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.imgCircle{
+  background-color: transparent;
+  height: 10rem;
+  width: 10rem;
+  background-image: url("../assets/img/circleuser.png");
+  background-size: auto;
+  background-position: 50% 50%;
+
+  border-radius: 50%;
+  border: 0.2rem solid #A19FD5;
+}
+
+.plusIcon{
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../assets/img/plus.png");
+  background-size: contain;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 0rem;
+  right: -1rem;
+}
+
+.inputFile{
+  display: none;
+}
+
+.nameInputWrapper{
+  width: 100%;
+  height: 5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.inputTitle{
+  font-family: "Hahmlet";
+  font-size: large;
+  line-height: 5rem;
+  text-align: right;
+}
+
+.inputDiv{
+  height: 2rem;
+}
+
+.nameInput{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  width: 15rem;
+  font-family: "Hahmlet";
+  font-size: large;
+  margin-left: 5rem;
+  /* text-align: center; */
+}
+
+.nameInputBar{
+  height: 2rem;
+}
+
+.birthInputWrapper{
+  width: 100%;
+  height: 5rem;
+  
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.datepicker{
+  margin-top: 0.5rem;
+  margin-left: 5rem;
+  font-family: "Hahmlet";
+}
+
+.diseaseInputWrapper{
+  width: 100%;
+  height: 5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.diseaseInput{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  width: 25rem;
+  font-family: "Hahmlet";
+  font-size: large;
+  margin-left: 5rem;
+  /* text-align: center; */
+}
+
+.fundInput{
+  width: 100%;
+  height: 5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.loadingBtn{
+  margin-top: 1.5rem;
+  width: 10rem;
+  height: max-content;
+  /* overflow: hidden; */
+}
+
+.load_img{
+  width: 100%;
+  height: 100%;;
+  object-fit: cover;
+}
+
+.registerBtn{
+  width: 10rem;
+  height: 3rem;
+  background-color: #A19FD5;
+  border-radius: 1rem;
+
+  text-align: center;
+  line-height: 2.7rem;
+  font-family: "Hahmlet";
+  font-size: large;
+  color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.errMsg{
+  font-family: "Hahmlet";
+  color: red;
+  margin-left: 5rem;
+}
+
+.centerErrMsg{
+  font-family: "Hahmlet";
+  color: red;
+}
+
+.goalMsg{
+  font-family: "Hahmlet";
+  color: blue;
+  margin-left: 5rem;
+}

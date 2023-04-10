@@ -1,0 +1,9 @@
+FROM openjdk:17-jdk-slim
+
+ARG JAR_FILE=build/libs/*.jar
+
+COPY ${JAR_FILE} app.jar
+
+EXPOSE 8080 9090
+
+ENTRYPOINT ["java", "-jar", "-Duser.timezone=Asia/Seoul", "app.jar"]

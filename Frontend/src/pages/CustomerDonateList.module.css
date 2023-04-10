@@ -1,0 +1,64 @@
+.CustomerDonateList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+    height: 900px;
+}
+
+.fav_title{
+    font-family: "Hahmlet";
+    font-size: 28px;
+    margin-bottom: 20px;
+    
+}
+.menu_bar{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu_list{
+      font-family: "Hahmlet";
+    /* background-color: skyblue; */
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.menu_list li{
+    text-align: center;
+    font-weight: bold;
+}
+
+.amount_log{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 900px;
+    border: 1px solid #d7d7d7;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+
+.amount_log>div{
+    text-align: center;
+    font-family: "Hahmlet";
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log_img img{
+    width:45px;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.srp.hospitalrpc";
+option java_outer_classname = "HospitalProto";
+
+// The greeting service definition.
+service HospitalGrpcService {
+  // Sends a greeting
+  rpc getHospitalRpc (HospitalInfoReq) returns (HospitalInfoRes) {
+  }
+}
+
+// The request message containing the user's name.
+message HospitalInfoReq {
+  int64 id = 1;
+}
+
+// The response message containing the greetings
+message HospitalInfoRes {
+  string name = 1;
+  int32 total_amount = 2;
+  int32 beneficiary_count = 3;
+  string wallet_address = 4;
+  string link = 5;
+}

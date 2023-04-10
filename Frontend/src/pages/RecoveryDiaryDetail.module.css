@@ -1,0 +1,433 @@
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "ClimateCrisis";
+  src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 100%;
+  flex-direction: column;
+  border-color: black;
+  min-width: 800px;
+  max-width: 920px;
+}
+
+.cardIndex {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardTop {
+  height: 80px;
+  background-color: #a19fd5;
+  display: flex;
+}
+
+.title {
+  font-family: "Hahmlet";
+  margin-left: 10px;
+  margin-top: 11px;
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.cardContent {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.cardContent::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  content: "";
+  z-index: -1;
+  background-position-y: -100px;
+}
+
+.imageContainer {
+  flex: 1;
+  min-width: 180px;
+  margin-left: 10px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contentItem {
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+}
+
+.patientInfo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.patientInfoItem {
+  font-family: "Hahmlet";
+
+  min-width: 150px;
+  margin-bottom: 10px;
+}
+
+.patientInfoTitle {
+  font-family: "Hahmlet";
+  font-size: 20px;
+  color: black;
+}
+
+.patientInfoContent {
+  font-family: "Hahmlet";
+  font-size: 22px;
+  font-weight: bold;
+  max-width: 500px;
+  color: lightslategray;
+}
+
+/* 병원이 작성한 카드 */
+.treatmentRecords {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* 치료일지 카드  */
+.recordCard {
+  margin-top: 20px;
+  width: calc(30%);
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  margin-right: 1.6%;
+  margin-left: 1.6%;
+  transition: transform 0.4s ease;
+  max-height: 500px;
+}
+
+.recordCard:hover {
+  transform: translateY(-5px);
+}
+
+/* 치료일자 */
+.recordDate {
+  text-align: center;
+  font-family: "Hahmlet";
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 30px;
+  background-color: #646298;
+  color: white;
+  /* 좌상, 우상, 우하, 좌하 */
+  border-radius: 10px 10px 0 0;
+}
+
+/* 치료사진 */
+.recordImage {
+  width: 100%;
+  height: 200px;
+  max-width: 100%;
+  max-height: 100%;
+
+  /* 이미지를 크기에 맞게 조정 */
+  object-fit: cover;
+}
+
+/* 치료일기 제목 */
+.recordIndex {
+  background-color: #fff;
+  padding: 10px;
+  font-family: "Hahmlet";
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+/* 치료일기 내용 */
+.recordContent {
+  font-family: "Hahmlet";
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+/* 하단버튼스타일 */
+.detailButton {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.detailCreateButton {
+  font-family: "Hahmlet";
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 0px 5px 0px 5px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background-color: #8140f1;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  position: relative;
+}
+
+.detailBackButton {
+  font-family: "Hahmlet";
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 0px 5px 0px 5px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background-color: #a19fd5;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  position: relative;
+}
+
+.modalTop {
+  width: 100%;
+  height: 50px;
+  background-color: #a19fd5;
+  margin-bottom: 5%;
+  font-family: "Hahmlet";
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  border-radius: 10px 10px 0 0;
+}
+
+.modalTopCreate {
+  width: 100%;
+  height: 40px;
+  background-color: #a19fd5;
+  margin-bottom: 1%;
+  font-family: "Hahmlet";
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  border-radius: 10px 10px 0 0;
+}
+
+.modalText {
+  margin-left: 35%;
+  margin-right: auto; /* 오른쪽으로 이동 */
+}
+
+.modalClose {
+  margin-right: 0; /* 기본값인 auto를 해제 */
+  border: 0;
+  background-color: transparent;
+}
+
+.modalClose:after {
+  content: "\00d7";
+  font-size: 30px;
+  border: 0;
+  background-color: transparent;
+}
+
+.modalImage {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.noImg {
+  /* width: 200px;
+  height: 200px; */
+  background-color: lightgray;
+  width: 100%;
+  height: 8rem;
+  max-width: 100%;
+  max-height: 100%;
+  /* 이미지를 크기에 맞게 조정 */
+  object-fit: cover;
+}
+
+.modalInfoTitle {
+  font-family: "Hahmlet";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.inputIndexCheck {
+  font-size: 12px;
+  margin-left: 86%;
+}
+
+.modalInfoDate {
+  font-family: "Hahmlet";
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.modalInfoContent {
+  font-family: "Hahmlet";
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px;
+}
+
+.modalContent {
+  display: block;
+  justify-content: center;
+}
+
+.hr {
+  margin: 15px;
+  border: none;
+  border-top: 3px solid rgb(0, 0, 0);
+}
+
+.modalHr {
+  margin: 1px 0;
+  border: none;
+  border-top: 1px solid gray;
+}
+
+.modalButton {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.modalInfo {
+  max-height: 200px;
+}
+
+.modalButtonItem {
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 0px 5px 0px 5px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  background-color: #a19fd5;
+  border: none;
+  border-radius: 32px;
+  flex-grow: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.imgInput {
+  width: 108px;
+  height: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.withImgCircle {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  border: 0.2rem solid #a19fd5;
+}
+
+.benImg {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.imgCircle {
+  background-color: transparent;
+  height: 6rem;
+  width: 6rem;
+  background-image: url("../assets/img/circleuser.png");
+  background-size: auto;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  border: 0.2rem solid #a19fd5;
+  display: flex;
+  justify-content: center;
+}
+
+.plusIcon {
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../assets/img/plus.png");
+  background-size: contain;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0rem;
+  right: -2rem;
+}
+
+.inputFile {
+  display: none;
+}
+
+.pagination {
+  /* background-color: red; */
+  display: block;
+  position: sticky;
+  bottom: 10px;
+
+  width: 100%;
+}
+
+.recoveryCardList {
+  font-family: "Hahmlet";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,75 @@
+
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.0.4'
+	id 'io.spring.dependency-management' version '1.1.0'
+	id 'com.google.protobuf' version '0.9.1'
+}
+
+protobuf {
+	protoc {
+		artifact = "com.google.protobuf:protoc:3.21.7"
+	}
+	plugins {
+		grpc {
+			artifact = 'io.grpc:protoc-gen-grpc-java:1.52.1'
+		}
+	}
+	generateProtoTasks {
+		all()*.plugins {
+			grpc {}
+		}
+	}
+}
+
+group = 'com.srp'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+jar{
+	enabled = false
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
+	implementation 'org.hibernate:hibernate-validator:8.0.0.Final'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+	runtimeOnly 'io.grpc:grpc-netty-shaded:1.52.1'
+	implementation 'io.grpc:grpc-protobuf:1.52.1'
+	implementation 'io.grpc:grpc-stub:1.52.1'
+	compileOnly 'org.apache.tomcat:annotations-api:6.0.53' // necessary for Java 9+
+}
+
+sourceSets {
+	main {
+		java {
+			srcDirs 'build/generated/source/proto/main/grpc'
+			srcDirs 'build/generated/source/proto/main/java'
+			srcDirs 'src/main/java/com.srp.constelinkfundraising'
+		}
+	}
+}
+
+
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

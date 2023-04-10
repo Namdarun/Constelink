@@ -1,0 +1,26 @@
+.main_wrapper{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  left: 0;
+
+  height: max-content;
+  padding-bottom: 20rem;
+  background-color: aqua;
+}
+
+.gif_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+
+.gif{
+  width: 50%;
+
+}

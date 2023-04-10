@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Hahmlet";
+    src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "ClimateCrisis";
+    src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+.NoticeList {
+    font-family: "Hahmlet";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notice {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    font-size: 14px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #747373;
+    /* font-weight: bold; */
+}
+
+.notice_info {
+    width: 75%;
+    text-align: center;
+}
+
+.notice_date {
+    width: 25%;
+    text-align: center;
+}
+
+.create_btn {
+    width: 100%;
+    border-style: none;
+    text-align: right;
+}
+
+.create_btn>button {
+    border-style: none;
+    color: red;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: grey;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pagination {
+    /* background-color: red; */
+    width: 100%;
+}
+
+.notice_title {
+    font-size: 36px;
+    /* background-color: #A19FD5; */
+    width: 920px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.notice_section {
+    width: 920px;
+    border-top: 1px solid #747373;
+    border-bottom: 1px solid #D6D6D6;
+    height: 570px;
+    padding-top: 0;
+    /* background-color: red; */
+}
+
+.notice_list {
+    list-style: none;
+    width: 920px;
+    padding-left: 0;
+    /* background-color: blue; */
+}
+
+.notice_item {
+    /* background-color: #b8c3e0; */
+    opacity: 0.9;
+    width: 920px;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #ececec;
+}
+
+.item_nav {
+    padding-left: 15px;
+    display: flex;
+    width: 520px;
+    justify-content: space-between;
+}
+
+.nav_num {
+    font-size: 16px;
+    color: #BDBADC;
+    font-weight: bold;
+}
+
+.nav_type1 {
+    border: 1px solid red;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: red;
+}
+
+.nav_type2 {
+    /* background-color: red */
+    border: 1px solid black;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+}
+
+.nav_title {
+    width: 400px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item_date {
+    width: 25%;
+    text-align: center;
+    font-size: 16px;
+    color: #929292;
+}

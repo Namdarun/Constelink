@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "noto-sans";
+  src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+@font-face {
+  font-family: "Crisis";
+  src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  /* position: static; */
+  /* position: absolute; */
+  left: 0;
+}
+
+.mainBanner {
+  font-family: "Hahmlet";
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  overflow: hidden;
+  background-image: url("../assets/img/topbanner_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bannerTitle {
+  font-family: "Hahmlet";
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+  color: white;
+}
+
+.bannerSubTitle {
+  font-family: "Hahmlet";
+  font-size: large;
+  color: white;
+  position: relative;
+  right: 8rem;
+}
+
+.mainArticle {
+  height: max-content;
+  padding-bottom: 2rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.articleStep {
+  background-color: white;
+  width: 90%;
+  height: max-content;
+  /* padding-bottom: 4rem; */
+}
+
+.articleStepTitle {
+  font-family: "Hahmlet";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.articleStepSubTitle {
+  font-family: "Hahmlet";
+  margin-top: 0.5rem;
+}
+
+.articleSteps {
+  /* background-color: burlywood; */
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articleStepOne {
+  background-color: #dbd9ec;
+  height: 3rem;
+  width: 12rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.voidCircle {
+  background-color: white;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  margin-left: 0.35rem;
+}
+
+.voidStar {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 1.2em;
+  margin-right: 0.9em;
+  margin-bottom: 1.2em;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.7em solid #fc0;
+  border-left: 0.3em solid transparent;
+  /* Controlls the size of the stars. */
+  font-size: 1rem;
+}
+.voidStar::before {
+  content: "";
+
+  display: block;
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: 0.6em;
+  left: -1em;
+
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid #fc0;
+  border-left: 1em solid transparent;
+
+  transform: rotate(-35deg);
+}
+.voidStar::after {
+  content: "";
+
+  display: block;
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: 0.6em;
+  left: -1em;
+
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid #fc0;
+  border-left: 1em solid transparent;
+
+  transform: rotate(-35deg);
+  transform: rotate(35deg);
+}
+
+.stepDetail {
+  height: 2.5rem;
+  width: 8rem;
+  margin-left: 0.35rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.stepOneNumber {
+  font-family: "Hahmlet";
+  font-size: small;
+  font-weight: bold;
+  color: #a19fd5;
+}
+
+.stepOneTodo {
+  font-family: "Hahmlet";
+  font-size: small;
+  font-weight: bold;
+  color: #a19fd5;
+}
+
+.stepNumber {
+  font-family: "Hahmlet";
+  font-size: small;
+  font-weight: bold;
+  color: white;
+}
+
+.stepTodo {
+  font-family: "Hahmlet";
+  font-size: small;
+  font-weight: bold;
+  color: white;
+}
+
+.articleStepTwo {
+  background-color: #a19fd5;
+  height: 3rem;
+  width: 12rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.articleStepThree {
+  background-color: #1c1d67;
+  height: 3rem;
+  width: 12rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.arrowDiv {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+  box-sizing: border-box;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-width: 0.25rem 0.25rem 0 0;
+  border-style: solid;
+  margin: 0.625rem;
+  transform: rotate(45deg);
+}
+.arrowDiv::before {
+  content: "";
+  box-sizing: border-box;
+  right: 0;
+  top: -0.188rem;
+  position: absolute;
+  height: 0.25rem;
+  box-shadow: inset 0 0 0 2rem;
+  transform: rotate(-45deg);
+  width: 1.438rem;
+  transform-origin: right top;
+}
+.arrowDiv::after {
+  content: "";
+  box-sizing: border-box;
+}
+
+.articleInfo {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* background-color: yellow; */
+  width: 90%;
+  height: max-content;
+}
+
+.articleTitle {
+  font-family: "Hahmlet";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.infoBeneficiary {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 0.2rem;
+  padding-bottom: 0.15rem;
+}
+
+.infoTitle {
+  font-family: "Hahmlet";
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.infoDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: yellowgreen; */
+  width: 80%;
+  height: 5rem;
+  margin-right: 0rem;
+}
+
+.detailItem {
+  font-family: "Hahmlet";
+  display: flex;
+  flex-direction: row;
+  margin-left: 35%;
+}
+
+.itemKey {
+  /* background-color: aqua; */
+  width: 3rem;
+}
+
+.itemLongKey {
+  /* background-color: aqua; */
+  width: 6rem;
+}
+
+.itemValue {
+  margin-left: 2rem;
+}
+
+.itemInput {
+  margin-left: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  width: 7rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.itemPadding {
+  height: 0.3rem;
+}
+
+.infoUser {
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 0.1rem grey;
+}
+
+.infoCheck {
+  /* background-color: tomato; */
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 0.1rem grey;
+}
+
+.moneyCheck {
+  background-color: #f3f2f6;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: solid 0.1rem grey;
+  font-family: "Hahmlet";
+}
+
+.moneyCheckKey {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.moneyCheckValue {
+  font-weight: bold;
+}
+
+.moneyCheckCurrency {
+  font-weight: bold;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+
+.fundingBtn {
+  background-color: #a19fd5;
+  width: 10rem;
+  height: 2.2rem;
+  color: white;
+  font-family: "Hahmlet";
+  margin-top: 1rem;
+  margin-left: auto;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.fundingKakao {
+  font-family: "noto-sans";
+  margin-left: auto;
+  margin-top: 0.2rem;
+}
+
+/* 결제 완료 후 토큰페이지 */
+.main_wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  left: 0;
+
+  height: max-content;
+  padding-bottom: 20rem;
+  background-color: aqua;
+}
+
+.article_info {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* background-color: yellow; */
+  width: 150%;
+  height: max-content;
+}
+
+.gif_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+
+.gif {
+  width: 50%;
+}

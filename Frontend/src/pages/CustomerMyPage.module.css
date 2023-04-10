@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "noto-sans";
+    src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+@font-face {
+    font-family: "Crisis";
+    src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+    font-family: "Hahmlet";
+    src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+
+.CustomerMyPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+}
+.user_profile{
+    display: flex;
+    align-items: center;
+     width: 700px;
+     justify-content: center;
+}
+
+.user_img_main>img{
+     width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.user_img>img{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.1s ease;
+    
+}
+.user_img img:hover{
+    transform: translateY(-5px);
+    animation: bounce 1.5s;
+}
+.user_log{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    /* background-color: red; */
+    width: 600px;
+    /* background-color: red; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url("../assets/img/login-banner.jpeg");
+    color: #ffffff
+}
+
+.user_menu{
+    display: flex;
+    justify-content: center;
+}
+.user_name{
+    padding-left: 30px;
+}
+
+.user_list{
+    list-style: none;
+    /* background-color: red; */
+    width: 600px;
+    padding-left: 0;
+  
+}
+
+.menu_logo{
+    width:30px;
+    height: 30px;
+    color: rgb(50, 50, 50)
+
+}
+
+.user_list li{
+    border-bottom: 2px solid gray;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    cursor: pointer;
+    font-family:Hahmlet ;
+    /* padding-left: 10px; */
+    box-shadow: 1px  gray;
+    justify-content: space-between;
+    /* border-radius: 5px; */
+  
+}
+
+
+/* .user_list li:hover{
+   background-color: lightgray; 
+} */
+
+.comment_greet{
+    font-family: "Hahmlet";
+    
+}
+.comment_mypage{
+       font-family: "Hahmlet";
+       font-size: 24px;
+       font-weight: bold;
+}
+
+
+.donate_amount{
+    font-family: "noto-sans";
+}
+
+.menu_logo{
+    margin-left: 10px;
+    margin-right:20px;
+}
+
+.menu_left{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    width: 170px;
+    
+}
+
+.user_donate{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+}
+
+.donate_title{
+    font-weight: bold;
+}
+
+/* 개인정보 변경 */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }

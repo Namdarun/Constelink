@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "noto-sans";
+  src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+@font-face {
+  font-family: "Crisis";
+  src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.mainWrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url("../assets/img/beautiful.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 15rem;
+  z-index: -10;
+}
+
+.mainBanner {
+  font-family: "Hahmlet";
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  overflow: hidden;
+  /* background-image: url("../assets/img/topbanner_1.jpg"); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 900px;
+}
+
+.bannerTitle {
+  font-family: "Hahmlet";
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+  color: white;
+}
+
+.bannerSubTitle {
+  font-family: "Hahmlet";
+  font-size: large;
+  color: white;
+  position: relative;
+  right: 6rem;
+}
+
+.fundWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  width: 930px;
+}
+
+.blockWrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-height: 180px;
+}
+
+/* 스크롤 생기는곳 (밖 박스)*/
+.categoryWrapper {
+  margin-top: 1rem;
+  width: 100%;
+  max-height: 180px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+  /* background-color: floralwhite; */
+}
+.scroll_box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: none;
+  max-height: 180px;
+}
+
+.categoryWrapper::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+
+
+.category_box {
+  display: flex;
+  align-self: center;
+  font-family: "Hahmlet";
+  color: #ececec;
+}
+.category_box:hover input[type="radio"] + label {
+  /* border: 4px yellow solid; */
+  transform: scale(1.1);
+}
+
+.category_box input[type="radio"] {
+  display: none;
+}
+
+.category_box input[type="radio"] + label {
+  font-family: "Hahmlet";
+  font-size: 13px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 라디오 버튼 폰트 색깔 */
+.category_box input[type="radio"] + label {
+  color: #ececec;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* 체크된 것 색깔표시 */
+.category_box input[type="radio"]:checked + label {
+  color: #d87dd1;
+  border: rgb(169, 121, 169) 1px solid;
+  background-color: white;
+  font-weight: 800;
+}
+/* 카테고리 박스 기본 색깔 5가지 */
+.box_color_1 {
+  background-color: #d87dd1;
+}
+.box_color_2 {
+  background-color: #ffaacf;
+}
+.box_color_3 {
+  background-color: #8176e6;
+}
+.box_color_4 {
+  background-color: #a19fd5;
+}
+.box_color_5 {
+  background-color: #879eba;
+}
+
+.cardsTitle {
+  margin-top: 1rem;
+  width: 100%;
+  font-family: "Crisis";
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 50px;
+}
+
+.cardsWrapper {
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 15px;
+}
+.cardsWrapper_1{
+  width: 900px;
+  height: 200px;
+  /* background-color: RED; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty_signal{
+  font-size: 78px;
+  font-weight: bold;
+}
+.empty_ment{
+  font-family: "Hahmlet";
+  margin-top: 5px;
+}
+
+
+.pagination {
+  font-family: "Hahmlet";
+  margin-bottom: 2rem;
+  display: block;
+  position: sticky;
+  bottom: 10px;
+}

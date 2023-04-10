@@ -1,0 +1,448 @@
+@font-face {
+    font-family: "noto-sans";
+    src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+@font-face {
+    font-family: "Crisis";
+    src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+    font-family: "Hahmlet";
+    src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+.mainWrapper_box {
+    width: 100%;
+    height: 15rem;
+}
+
+.relative_box {
+    position: relative;
+}
+
+.mainWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.fundMain {
+    font-family: "Hahmlet";
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    overflow: hidden;
+    background-image: url("../assets/img/patient_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundAbstract {
+    display: flex;
+    flex-direction: row;
+    width: 1350px;
+    justify-content: space-between;
+}
+
+.fundTitle {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundCategory {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: #827d7d;
+    opacity: 75%;
+    color: white;
+    font-family: "Hahmlet";
+    font-size: small;
+    display: inline-block;
+}
+
+.fundHospital {
+    font-family: "Hahmlet";
+    color: white;
+}
+
+.fundBrief {
+    font-family: "Hahmlet";
+    font-size: x-large;
+    color: white;
+}
+
+.fundDday {
+    font-family: "Hahmlet";
+    font-weight: bold;
+    color: white;
+    border: solid;
+    width: fit-content;
+    padding: 0.2rem 0.4rem;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    border-width: thin;
+}
+
+.fundShare {
+    margin-top: 7rem;
+    background-color: #ffffff;
+    opacity: 69%;
+    width: 18rem;
+    height: 4.2rem;
+    border-radius: 1rem;
+    margin-right: 20px;
+}
+
+.shareTitle {
+    font-family: "Hahmlet";
+    color: #575656;
+    padding-top: 0.2rem;
+    padding-left: 0.7rem;
+    font-weight: bold;
+}
+
+.shareSub {
+    font-family: "Hahmlet";
+    color: #575656;
+    font-size: small;
+    padding: 0rem 0.7rem;
+}
+
+.shareBtn {
+    font-family: "Hahmlet";
+    color: #be6db7;
+    font-size: small;
+    font-weight: bolder;
+    padding-left: 13.5rem;
+}
+
+.shareBtnText {
+    cursor: pointer;
+}
+
+.storyWrapper_box {
+    position: relative;
+    margin-top: 2rem;
+    height: 100%;
+}
+
+.storyWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.storyDetail {
+    /* background-color: blue; */
+    width: 60rem;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+.storyHeader {
+    background-color: #413e69;
+    height: 11rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.storyHeaderText {
+    font-family: "Hahmlet";
+    font-size: larger;
+    color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.storyContent {
+    margin-top: 1rem;
+    border-top: solid #c9c6c6;
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.storyContentLogo {
+    font-family: "noto-sans";
+    font-size: larger;
+    font-weight: bolder;
+    margin: 1rem;
+    margin-left: 110px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+.storyContentWrapper {
+    /* background-color: turquoise; */
+    width: 90%;
+    height: max-content;
+    padding-bottom: 5rem;
+}
+
+.storyContentImg {
+    height: 15rem;
+    /* background-image: url("../assets/img/patient_1.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    width: 890px;
+}
+
+.storyContentText {
+    margin-top: 1rem;
+    font-family: "noto-sans";
+}
+
+.fundingCard {
+    width: 22rem;
+    height: 45rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundingBeneficiary {
+    width: 20rem;
+    height: 8rem;
+    border-color: #dbd9ec;
+    border-style: solid;
+    border-bottom: none;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefitTitle {
+    font-family: "Hahmlet";
+    font-size: larger;
+    font-weight: bolder;
+    color: #666666;
+    margin: 1rem 2rem;
+}
+
+.benefitMan {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    height: auto;
+}
+
+.benefitTag {
+    font-family: "Hahmlet";
+    font-weight: bolder;
+    color: #666666;
+}
+
+.benefitName {
+    font-family: "Hahmlet";
+    color: #666666;
+    margin-left: 0.3rem;
+}
+
+.benefitImg {
+    width: 2rem;
+    height: 2rem;
+    /* background-color: grey; */
+    border-radius: 50%;
+    position: relative;
+    bottom: 0.2rem;
+    left: 0.3rem;
+}
+
+.beneficiary {
+    font-family: "Hahmlet";
+    margin-left: 2rem;
+    color: #666666;
+}
+
+.fundingUsage {
+    width: 20rem;
+    border-color: #dbd9ec;
+    border-top-color: #c9c6c6;
+    border-style: solid;
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.usageTag {
+    font-family: "Hahmlet";
+    margin: 1rem 2rem 0rem 2rem;
+    color: #666666;
+}
+
+.usageList {
+    font-family: "Hahmlet";
+    font-size: small;
+    color: #666666;
+    margin-left: 3rem;
+}
+
+.usageHospital {
+    font-family: "Hahmlet";
+    font-weight: bolder;
+    color: #666666;
+    position: absolute;
+    /* left: 13.5rem; */
+    bottom: 0.5rem;
+    width: 95%;
+    text-align: end;
+}
+
+.fundingBtn {
+    background-color: #605da8;
+    width: 20rem;
+    height: 4.5rem;
+    border-color: #dbd9ec;
+    border-style: solid;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundingBtnText {
+    font-family: "Hahmlet";
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+}
+
+.fundingBar {
+    background-image: url("../assets/img/topbanner_1.jpg");
+    margin-top: 2rem;
+    width: 20rem;
+    height: max-content;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: cente; */
+    align-items: center;
+}
+
+.fundingTag {
+    font-family: "Hahmlet";
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    top: 0.25rem;
+    right: 6rem;
+}
+
+.fundingPct {
+    font-family: "Hahmlet";
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    top: 0.25rem;
+    right: 7rem;
+}
+
+.star {
+    right: 7.5rem;
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-top: 0.25rem;
+    margin-left: 1.2em;
+    margin-right: 0.9em;
+    margin-bottom: 1rem;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid #fc0;
+    border-left: 0.3em solid transparent;
+    /* Controlls the size of the stars. */
+    font-size: 0.5rem;
+}
+
+.star::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid #fc0;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+}
+
+.star::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid #fc0;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+    transform: rotate(35deg);
+}
+
+.fundDetailBar {
+    height: 0.75rem;
+    opacity: 0.8;
+    width: 80%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.fundDetailBar::-webkit-progress-bar {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.fundDetailBar::-webkit-progress-value {
+    background-color: #be6db7;
+    border-radius: 10px;
+    animation: progress-bar 1s ease-out forwards;
+}
+
+@keyframes progress-bar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.fundingGoal {
+    font-family: "Hahmlet";
+    font-size: x-small;
+    color: white;
+    position: relative;
+    top: 0.25rem;
+    left: 7.5rem;
+}

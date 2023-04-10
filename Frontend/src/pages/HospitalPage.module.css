@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "noto-sans";
+  src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+@font-face {
+  font-family: "Crisis";
+  src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+.mainWrapper{
+  /* background-color: aqua; */
+  width: 100%;
+  height: max-content;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hospitalWrapper{
+  height: 10rem;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hospitalIcon{
+  background-color: #0C4DA2;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.hospitalName{
+  color: white;
+  font-family: "Hahmlet";
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-left: 2.4rem;
+}
+
+.hospitalText{
+  font-family: "Hahmlet";
+  font-size: x-large;
+  height: max-content;
+  margin-left: 2rem;
+}
+
+.menuWrapper{
+  width: 50%;
+  height: max-content;
+  padding-bottom: 3rem;
+  margin-top: 6rem;
+}
+
+.menuBar{
+  height: 5rem;
+  border-bottom: solid 0.2rem black;
+  display: flex;
+  flex-direction: row;
+}
+
+.menuIcon{
+  /* background-color: violet; */
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.userIcon{
+  background-image: url("../assets/img/circleuser.png");
+  background-size: contain;
+  height: 2rem;
+  width: 2rem;
+}
+
+.fileIcon{
+  background-image: url("../assets/img/file.png");
+  background-size: contain;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.plusIcon{
+  background-color: transparent;
+  background-image: url("../assets/img/plus.png");
+  background-size: contain;
+  height: 1rem;
+  width: 1rem;
+  
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.menuIcomImg{
+  height: 2rem;
+  width: 2rem;
+}
+
+.menuText{
+  height: 5rem;
+  width: 15rem;
+  font-family: "Hahmlet";
+  line-height: 5rem;
+  /* padding-left: 2rem; */
+}
+
+.menuArrow{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.25rem 0.25rem 0 0;
+  border-style: solid;
+  margin: 10px;
+  transform: rotate(45deg);
+  /* 위치 조정 */
+  margin-left: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.menuArrow::after{
+  content: "";
+  box-sizing: border-box;
+}

@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "noto-sans";
+    src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+@font-face {
+    font-family: "Crisis";
+    src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+    font-family: "Hahmlet";
+    src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+/* 컴포넌트 */
+.Login{
+    /* 삭제예정, 테스트용 */
+     margin-top: 100px;
+    font-family: "noto-sans";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 로그인 로고부분 */
+.login_header{
+    width: 400px;
+    height: 150px;
+    font-family: "Crisis";
+    color: #F6F5F5;
+    text-align: center;
+    background-image: url("../assets/img/login-banner.jpeg");
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+.logo_title{
+    margin-top: 30px;
+    font-size: 42px;
+}
+
+.logo_sub{
+    font-family:"Hahmlet" ;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* 로그인 버튼 부분 */
+.login_menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.login_menu li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:22px; 
+    width: 400px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0E003F;
+}
+
+.login_menu div{
+    padding-right: 60px;
+    width: 170px;
+}
+
+.login_menu img{
+    width: 56px;
+}
+
+#google_list {
+    background-color: #F6F5F5;
+}
+
+#kakao_list {
+    background-color: rgb(253 220 63)
+}
+
+
+
+/*로그인 약관 부분*/
+footer {
+    display: flex;
+    width: 400px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+footer div{
+    cursor: pointer;
+}

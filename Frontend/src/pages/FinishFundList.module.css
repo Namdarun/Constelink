@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Tilt";
+  src: url("../assets/fonts/TiltWarp-Regular-VariableFont_XROT\,YROT.ttf");
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+.FinishFundList {
+  /* display: flex; */
+  /* width: 100%; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.grid_section::before {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 10px);
+  /* background-color: rgb(36, 40, 52); */
+  /* background-color: rgb(1, 2, 3); */
+  background-image: url("../assets/img/backback.jpg");
+  background-size: cover;
+  z-index: -4;
+  content: "";
+}
+
+.finish_title {
+  width: 890px;
+  text-align: center;
+  font-family: "Hahmlet";
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.grid_section {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 400px);
+  margin-top: 20px;
+}
+
+.grid_card {
+  /* background-color: rgb(233, 230, 233);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  ); */
+  border-radius: 6px;
+  position: relative;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.grid_card:hover {
+  transform: translateY(-5px);
+}
+.grid_card:hover .card_success {
+  animation: hide 1s ease-in-out forwards;
+}
+.grid_card:hover .show_comment {
+  animation: show 7s ease-in-out infinite;
+}
+.show_comment {
+  /* display: block; */
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: #ececec;
+  /* font-weight: bold; */
+  font-family: "Hahmlet";
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes hide {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    bottom: -35%;
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0.2;
+  }
+}
+
+.grid_card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-image: url("../assets/img/backback.jpg");
+  z-index: -1;
+}
+
+.card_image {
+  /* width: 100%;
+    height: 100%; */
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card_name {
+  font-family: "Hahmlet";
+  font-size: 24px;
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.grid_card:hover .card_star {
+  display: block;
+  text-align: center;
+  /* position: absolute; */
+  color: #ececec;
+  font-size: 48pxpx;
+  border-radius: 50%;
+  animation: card_star 5s linear infinite;
+}
+
+.card_star {
+  display: none;
+  text-align: center;
+  /* position: absolute; */
+  color: #ececec;
+  font-size: 30px;
+  border-radius: 50%;
+  animation: card_star 5s linear infinite;
+}
+
+.card_disease {
+  padding-left: 5%;
+}
+
+@keyframes card_star {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -100%) scale(1);
+  }
+}
+
+.card_success {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50%;
+}
+.crown_section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.crown_section img {
+  width: 120px;
+}
+.success {
+  border: 3px solid #ececec;
+  color: #ececec;
+  width: 70%;
+  border-radius: 25px;
+}
+
+.raising_star1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation: raisingStar 10s linear infinite;
+  animation-delay: 0s;
+  z-index: -1;
+}
+.raising_star0 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation: raisingStar 10s linear infinite;
+  animation-delay: 5s;
+  z-index: -1;
+}
+/* .star1 {
+  bottom: 0;
+  right: 80px;
+}
+.star2 {
+  bottom: 30px;
+  right: 40px;
+} */
+
+.star_box {
+  display: block;
+  height: calc(100%);
+  width: 100%;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  left: 0;
+}
+
+@keyframes raisingStar {
+  0% {
+    transform: translate(-10px, 0%) rotate(0deg);
+  }
+  50% {
+    transform: translate(20px, -1500px) rotate(120deg);
+  }
+  100% {
+    transform: translate(-10px, -3000px) rotate(240deg);
+  }
+}

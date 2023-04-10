@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Hahmlet";
+    src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "ClimateCrisis";
+    src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+
+.NoticeCreate{
+    font-family: "Hahmlet";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.write_section{
+        width: 920px;
+}
+
+.write_title{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 920px;
+    border-bottom: 1px solid #D6D6D6 ;
+}
+
+
+.write_input{
+    width: 920px;
+    height: 43px;
+    outline: none;
+    border-radius: 5px;
+    border-style: none;
+    outline:1px solid #A19FD5;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.write_input:focus{
+    outline:2px solid #0982f0;
+}
+
+.write_input::placeholder{
+    font-size: 20px;
+    color: #C6C5C5 ;
+    font-family: "Hahmlet";
+}
+
+
+.write_category{
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #D6D6D6 ;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.category_select{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.category_fixed{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.write_content{
+    
+}
+
+.category_select select{
+width: 80px;
+border-radius: 5px; 
+border: 1px solid #BDBADC;
+font-size: 13px;
+}
+
+.category_fixed input[type="button"] {
+    width: 50px;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fbtn{
+    background-color: grey;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+
+ }
+
+ .fbtnOn{
+    background-color: #BDBADC;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+ .write_finish{
+    width: 920px;
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+ }
+
+ .write_btn{
+    border-style: none;
+    width: 114px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #A19FD5;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+ 
+
+}
+.write_btn:hover{
+  background-color:#BDBADC ;
+ }
+ /* 공지사항 상세페이지 */
+
+ 

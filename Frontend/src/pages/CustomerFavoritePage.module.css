@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "noto-sans";
+    src: url("../assets/fonts/NotoSerifKR-Regular.otf");
+}
+
+@font-face {
+    font-family: "Crisis";
+    src: url("../assets/fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf");
+}
+
+@font-face {
+    font-family: "Hahmlet";
+    src: url("../assets/fonts/Hahmlet-VariableFont_wght.ttf");
+}
+
+.CustomerFavoritePage {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 0px;
+    /* background-color: rgb(48, 42, 81); */
+    height: 900px;
+}
+
+.fav_title {
+    font-family: "Hahmlet";
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.fav_box {
+    /* background-color: red; */
+    /* background-color: red; */
+    width: 900px;
+}
+
+.fav_list {
+    list-style: none;
+    padding-left: 0;
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.fav_item{
+    /* width: 100%; */
+}
+
+@media only screen and (max-width: 768px) {
+    .fav_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.fav_item {
+    /* background-color: #f2f2f2; */
+    /* border: 1px solid #ddd; */
+    /* padding: 20px; */
+    /* text-align: center; */
+    font-size: 30px;
+    list-style: none;
+    /* width: 150px; */
+    /* height: 270px; */
+    word-break: break-all;
+
+}
